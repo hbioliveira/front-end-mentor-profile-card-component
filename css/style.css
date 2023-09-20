@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+/* --------- Primary --------- */
+--dark-cyan: hsl(185, 75%, 39%);
+--very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--dark-grayish-blue: hsl(227, 10%, 46%);
+
+/* --------- Neutral --------- */
+--dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-color: var(--dark-cyan);
+    background-repeat: no-repeat;
+    background-position:     
+    bottom 300px left -100px,
+    top 350px right -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 10px 10px 100px 1px rgb(128, 127, 127);
+}
+
+main .infos {
+    text-align: center;}
+
+main .infos img {
+    border: 5px solid white;
+    border-radius: 50%;
+    margin-top: -40%;
+}
+
+main .infos h1 {
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+main .infos h1 span {
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+}
+
+main .infos p {
+    color: var(--dark-grayish-blue);
+    font-size: 14px;
+    margin: .5rem auto 1.5rem auto;
+    
+}
+
+main .counter {
+    border-top: .1px solid hsl(0, 0%, 59%, 30%);
+    width: 100%;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .counter .counter-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .counter h2 {
+    font-size: 18px;
+}
+
+main .counter p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--dark-gray);
+
+}
+
+footer .attribution { 
+    font-size: 11px; text-align: center;
+    margin-top: 1.5rem;
+}
+
+footer .attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 375px) {
+
+    body {
+        background-position:     
+        bottom 400px left -750px,
+        top 400px right -750px;
+    
+    }
+
+    main {
+        max-width: 85%;
+    }
+}
